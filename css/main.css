@@ -541,4 +541,8 @@ HERO SECTION
         top: -2px;
     }
 
+    footer p {
+        text-align: center;
+    }
+
 }
