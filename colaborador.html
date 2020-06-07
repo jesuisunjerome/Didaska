@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Didaska</title>
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Sidebar navigation -->
+        <div id="sidebar-nav">
+            <div id="dismiss">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <!-- Logo -->
+                <li class="nav-item">
+                    <div class="logo-wrapper waves-light">
+                        <a class="nav-link py-5 text-center" href="index.html">
+                            LOGO DIDASKA
+                            <!--                        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center">
+                   -->
+                        </a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li class="nav-item">
+                            <a class="w-100 nav-link waves-effect d-block active" href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex align-items-center justify-content-between nav-link waves-effect">Secciones<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <ul class="collapse list-unstyled cyan darken-4" id="homeSubmenu">
+                                <li>
+                                    <a class="w-100 nav-link waves-effect d-block" href="#">Matemáticas</a>
+                                </li>
+                                <li>
+                                    <a class="w-100 nav-link waves-effect d-block" href="#">Idiomas</a>
+                                </li>
+                                <li>
+                                    <a class="w-100 nav-link waves-effect d-block" href="#">Ingeniería</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="w-100 nav-link waves-effect d-block" href="#">Tutores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="w-100 nav-link waves-effect d-block" href="#">Estudiantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="w-100 nav-link waves-effect d-block" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="w-100 nav-link waves-effect d-block" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <div class="mask-sidebar"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar">
+            <div class="container-fluid">
+                <!-- SideNav slide-out button -->
+                <button id="sidebar-button" class="navbar-toggler d-inline" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h3 class="mb-0 h3-responsive d-md-block d-none">
+                    <a class="color-secundario" href="index.html">Didaska</a>
+                </h3>
+                <ul class="navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#iniciarSesion">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-toggle="modal" data-target="#registrarse" id="nav-registrarse" class="nav-link font-weight-bold">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+
+    <main class="pt-5">
+        <div id="hero">
+            <img src="images/4.jpg" class="hero w-100" alt="">
+            <svg width="76" class="funFirst fun" height="89" viewBox="0 0 76 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect y="26" width="79" height="63" fill="#E5E5E5" />
+                </g>
+            </svg>
+            <svg width="76" class="funSecond fun" height="89" viewBox="0 0 76 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect x="32" width="79" height="69" fill="#A5C6CF" />
+                </g>
+            </svg>
+        </div>
+
+
+        <div id="colaborador-login">
+            <div class="container-fluid">
+                <div class="row mx-2 pb-5">
+                    <div class="offset-lg-1 col-lg-4 col-md-6 col-sm-9 mx-auto fondo-gris z-depth-1 px-0 free-bird">
+                        <div class="modal-header">
+                            <h5 class="titulo-principal">Ser colaborador</h5>
+                        </div>
+                        <div class="card-body py-5">
+                            <input type="text" id="iniciarNombre" class="form-control mb-4" placeholder="Nombre">
+                            <input type="text" id="iniciarNombre" class="form-control mb-4" placeholder="Apellido(s)">
+                            <input type="email" id="iniciarCorreo" class="form-control mb-4" placeholder="Correo electrónico">
+                            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+                            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Confirmar contraseña">
+
+                            <button class="mx-0 btn waves-effect btnSesionPrincipal btn-block my-4">Registrarse</button>
+
+                            <div class="my-2 text-center">
+                                <p class="small brown-color">
+                                    Al registrarte estás aceptando nuestros
+                                    <a href="" class="d-block color-principal font-weight-bold"><u>Términos de servicio y condiciones de uso</u>
+                                    </a>
+                                </p>
+                            </div>
+                            <p class="text-center my-5">o</p>
+                            <!--Social-->
+                            <div class="text-center">
+                                <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center">
+                                    <img src="images/brands-and-logotypes.png" class="mr-md-3" alt="">
+                                    Ingresar con Google</button>
+                                <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center"><img src="images/facebook.png" class="mr-md-3" alt=""> Ingresar con Facebook</button>
+                            </div>
+                        </div>
+                        <svg width="76" height="89" class="fun" viewBox="0 0 76 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="26" width="79" height="63" fill="#E5E5E5" />
+                                <rect x="32" width="79" height="69" fill="#A5C6CF" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="col-lg-7 col-md-6 p-md-5">
+                        <h5 class="titulo-principal color-principal-opacity my-5">
+                            Lorem ipsum dolor sit amet
+                            Sed ut perspiciatis unde omnis iste
+                        </h5>
+                        <p class="color-principal-opacity pb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore.
+                        </p>
+
+                        <p class="color-principal-opacity pb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                        </p>
+
+                        <p class="color-principal-opacity">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer font-small fondo-secundario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a href="#">
+                            <img src="images/icons8-facebook-rodeado-de-c%C3%ADrculo-64.png" height="38" alt="">
+                        </a>
+                        <a href="#" class="mx-3">
+                            <img src="images/icons8-instagram-64.png" height="38" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/icons8-twitter-circled-64.png" height="38" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5 fondo-principal">
+            <div class="row m-2 m-md-4">
+                <div class="col-12 col-md-6">
+                    <p class="py-0 mb-0 color-secundario">
+                        © <a href="index.html" class="color-secundario"> Didaska</a> 2020. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link py-0 color-secundario" href="#!">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0 color-secundario" href="#!">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0 color-secundario" href="#!">Condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-0 color-secundario" href="#!">Políticas de privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Iniciar sesión -->
+    <div class=" modal fade pl-0" id="iniciarSesion" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content fondo-gris">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title titulo-principal" id="exampleModalLabel">Conéctate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3 py-5">
+                    <input type="email" id="iniciarCorreo" class="form-control mb-4" required placeholder="Correo electrónico">
+
+                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" required placeholder="Contraseña">
+
+                    <button class="mx-0 btn waves-effect btnSesionPrincipal btn-block my-4">Ingresar</button>
+
+                    <div class="text-center">
+                        <a href="" class="color-principal"><u>¿Olvidaste tu contraseña?</u></a>
+                        <p class="brown-color">¿No tienes una cuenta?
+                            <a data-dismiss="modal" data-toggle="modal" data-target="#registrarse">
+                                <u class="color-principal">Regístrate</u>
+                            </a>
+                        </p>
+                    </div>
+
+                    <p class="text-center my-5">o</p>
+
+                    <!--Social-->
+                    <div class="text-center">
+                        <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center">
+                            <img src="images/brands-and-logotypes.png" class="mr-md-3" alt="">
+                            Ingresar con Google</button>
+                        <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center"><img src="images/facebook.png" class="mr-md-3" alt=""> Ingresar con Facebook</button>
+
+                    </div>
+                </div>
+
+                <svg width="76" height="89" class="fun" viewBox="0 0 76 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect y="26" width="79" height="63" fill="#E5E5E5" />
+                        <rect x="32" width="79" height="69" fill="#A5C6CF" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Registrarse-->
+    <div class="modal fade pl-0" id="registrarse" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content fondo-gris">
+                <div class="modal-header px-4 mb-1">
+                    <h5 class="modal-title titulo-principal" id="exampleModalLabel">Regístrate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-0 py-0">
+                    <div class="container-fluid p-0" id="elegirLogin">
+                        <div class="row text-center">
+                            <div class="col-6 pb-5">
+                                <a href="" id="loginEstudiante" class="py-5 d-block">
+                                    <img class="imgRegistrarse" src="images/student.png" alt="">
+                                    <h5 class="my-4">Estudiante</h5>
+                                </a>
+                            </div>
+                            <div class="col-6 pb-5">
+                                <a href="colaborador.html" class="py-5 d-block">
+                                    <img class="imgRegistrarse" src="images/teacher%20(1).png" alt="">
+                                    <h5 class="my-4">Colaborador</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="estudianteLogin" class="d-none">
+                        <div class="card-body py-5">
+                            <input type="text" id="nombreColabo" class="form-control mb-4" required placeholder="Nombre">
+                            <input type="text" id="apellidoColabo" class="form-control mb-4" required placeholder="Apellido(s)">
+                            <input type="email" id="correoColabo" class="form-control mb-4" required placeholder="Correo electrónico">
+                            <input type="password" id="passColabo" class="form-control mb-4" required placeholder="Contraseña">
+                            <input type="password" id="confPassColabo" class="form-control mb-4" required placeholder="Confirmar contraseña">
+
+                            <button class="mx-0 btn waves-effect btnSesionPrincipal btn-block my-4">Registrarse</button>
+
+                            <div class="my-2 text-center">
+                                <p class="small brown-color">
+                                    Al registrarte estás aceptando nuestros
+                                    <a href="" class="d-block color-principal font-weight-bold"><u>Términos de servicio y condiciones de uso</u>
+                                    </a>
+                                </p>
+                            </div>
+                            <p class="text-center my-5">o</p>
+                            <!--Social-->
+                            <div class="text-center">
+                                <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center">
+                                    <img src="images/brands-and-logotypes.png" class="mr-md-3" alt="">
+                                    Ingresar con Google</button>
+                                <button class="mx-auto btn waves-effect btnSesionSecundario my-4 flex-center"><img src="images/facebook.png" class="mr-md-3" alt=""> Ingresar con Facebook</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="76" height="89" class="fun" viewBox="0 0 76 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect y="26" width="79" height="63" fill="#E5E5E5" />
+                        <rect x="32" width="79" height="69" fill="#A5C6CF" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>
