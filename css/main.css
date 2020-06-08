@@ -541,6 +541,10 @@ HERO SECTION
         top: -2px;
     }
 
+    .btnSesionSecundario {
+        width: 100%;
+    }
+
     footer p {
         text-align: center;
     }
