@@ -1,4 +1,6 @@
  $(document).ready(function () {
+     $(".introText h2").addClass("animated fadeInDown slow");
+
      $('#dismiss, .overlay').on('click', function () {
          $('#sidebar-nav').removeClass('active');
          $('.overlay').removeClass('active');

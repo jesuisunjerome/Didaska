@@ -335,7 +335,7 @@ HERO SECTION
 #miniDesc-wrapper .miniDescripcion::before,
 #secciones-wrapper .miniDescripcion::before {
     bottom: 0;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--brown-color-opacity);
 }
 
 #colaboradores-wrapper {
@@ -398,7 +398,9 @@ HERO SECTION
 }
 
 #resumen-wrapper img:hover {
-    filter: grayscale(0) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: grayscale(0)
+        /*drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))*/
+    ;
 }
 
 #funcion-wrapper {
@@ -447,6 +449,15 @@ HERO SECTION
     transform: translateY(35px);
     width: 100%;
     transition: .5s ease-in-out;
+}
+
+#secciones-wrapper .miniDescripcion img {
+    filter: grayscale(100%);
+    transition: .5s ease;
+}
+
+#secciones-wrapper .miniDescripcion:hover img {
+    filter: grayscale(0);
 }
 
 
@@ -550,4 +561,15 @@ HERO SECTION
         text-align: center;
     }
 
+}
+
+
+span.anchor {
+    margin-top: -50px;
+    /* height of nav, in this case 54px */
+    display: block;
+    height: 50px;
+    /* height of nav, in this case 54px */
+    visibility: hidden;
+    position: relative;
 }
