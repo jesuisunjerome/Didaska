@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <header>
         <!-- Sidebar navigation -->
@@ -46,19 +46,19 @@
                 <li>
                     <ul class="collapsible collapsible-accordion">
                         <li class="nav-item">
-                            <a class="w-100 nav-link waves-effect d-block active" href="index.html">Inicio</a>
+                            <a class="w-100 nav-link waves-effect d-block" href="index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex align-items-center justify-content-between nav-link waves-effect">Secciones<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex align-items-center justify-content-between nav-link waves-effect active">Secciones<i class="fas fa-angle-down rotate-icon"></i></a>
                             <ul class="collapse list-unstyled cyan darken-4" id="homeSubmenu">
                                 <li>
-                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html">Matemáticas</a>
+                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html#matematicas">Matemáticas</a>
                                 </li>
                                 <li>
-                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html">Idiomas</a>
+                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html#idiomas">Idiomas</a>
                                 </li>
                                 <li>
-                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html">Ingeniería</a>
+                                    <a class="w-100 nav-link waves-effect d-block" href="secciones.html#ingenieria">Ingeniería</a>
                                 </li>
                             </ul>
                         </li>
@@ -129,59 +129,123 @@
         </div>
 
         <div id="secciones-wrapper" class="container-fluid my-5">
-            <div class="row m-2 m-md-4 text-center">
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+            <span class="anchor" id="idiomas"></span>
+            <div id="idiomas" class="row m-2 m-md-4 text-center bg-white">
+                <div class="col-12 fondo-gris text-left">
+                    <h3 class="mb-4">Idiomas</h3>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
                     <a href="#" class="d-block color-principal">
-                        <img src="images/seccion1.png" class="img-fluid" alt="">
-                        <h6>Sed ut perspiciatis</h6>
+                        <img src="images/img3.png" class="img-fluid" alt="">
+                        <h6>Francés</h6>
                     </a>
                 </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
                     <a href="#" class="d-block color-principal">
                         <img src="images/seccion2.png" class="img-fluid" alt="">
-                        <h6>Ut enim ad minima</h6>
+                        <h6>Español</h6>
                     </a>
                 </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion5.png" class="img-fluid" alt="">
+                        <h6>Inglés</h6>
+                    </a>
+                </div>
+            </div>
+            <span class="anchor" id="matematicas"></span>
+            <div id="matematicas" class="row m-2 m-md-4 text-center bg-white">
+                <div class="col-12 fondo-gris text-left">
+                    <h3 class="mb-4">Matemáticas</h3>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion1.png" class="img-fluid" alt="">
+                        <h6>Algebra</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion2.png" class="img-fluid" alt="">
+                        <h6>Geometría</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
                     <a href="#" class="d-block color-principal">
                         <img src="images/seccion3.png" class="img-fluid" alt="">
-                        <h6>Quis autem vel eum</h6>
+                        <h6>Cálculo</h6>
                     </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/img1.png" class="img-fluid" alt="">
+                        <h6>Ecuaciones diferenciales</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion4.png" class="img-fluid" alt="">
+                        <h6>Métodos numéricos</h6>
+                    </a>
+                </div>
+            </div>
+            <span class="anchor" id="ingenieria"></span>
+            <div id="ingenieria" class="row m-2 m-md-4 text-center bg-white">
+                <div class="col-12 fondo-gris text-left">
+                    <h3 class="mb-4">Ingeniería</h3>
                 </div>
                 <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
                     <a href="#" class="d-block color-principal">
                         <img src="images/img1.png" class="img-fluid" alt="">
-                        <h6>Sed ut perspiciatis</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
-                    <a href="#" class="d-block color-principal">
-                        <img src="images/seccion4.png" class="img-fluid" alt="">
-                        <h6>Ut enim ad minima</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
-                    <a href="#" class="d-block color-principal">
-                        <img src="images/img3.png" class="img-fluid" alt="">
-                        <h6>Quis autem vel eum</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
-                    <a href="#" class="d-block color-principal">
-                        <img src="images/seccion2.png" class="img-fluid" alt="">
-                        <h6>Sed ut perspiciatis</h6>
-                    </a>
-                </div>
-                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
-                    <a href="#" class="d-block color-principal">
-                        <img src="images/seccion5.png" class="img-fluid" alt="">
-                        <h6>Ut enim ad minima</h6>
+                        <h6>Mecánica de materiales</h6>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
                     <a href="#" class="d-block color-principal">
                         <img src="images/img2.png" class="img-fluid" alt="">
-                        <h6>Quis autem vel eum</h6>
+                        <h6>Topografía</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/img3.png" class="img-fluid" alt="">
+                        <h6>Análisis estructural</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion1.png" class="img-fluid" alt="">
+                        <h6>Diseño estructural</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion2.png" class="img-fluid" alt="">
+                        <h6>Hidráulica</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion4.png" class="img-fluid" alt="">
+                        <h6>Mecánica vectorial</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion3.png" class="img-fluid" alt="">
+                        <h6>Física</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/seccion5.png" class="img-fluid" alt="">
+                        <h6>Química</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-6 py-4 miniDescripcion bg-white">
+                    <a href="#" class="d-block color-principal">
+                        <img src="images/img2.png" class="img-fluid" alt="">
+                        <h6>Dinámica</h6>
                     </a>
                 </div>
             </div>
@@ -225,7 +289,7 @@
                             <a class="nav-link py-0 color-secundario" href="#!">Condiciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-0 color-secundario" href="#!">Políticas de privacidad</a>
+                            <a class="nav-link py-0 color-secundario" href="#!">Política de privacidad</a>
                         </li>
                     </ul>
                 </div>
