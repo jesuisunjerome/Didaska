@@ -358,7 +358,7 @@ HERO SECTION
 #resumen-wrapper .miniDescripcion::before,
 #mission-wrapper .miniDescripcion::before {
     top: 0;
-    border-top: 1px solid;
+    border-top: 1px solid var(--brown-color-opacity);
 }
 
 #resumen-wrapper .miniDescripcion::after {
@@ -413,18 +413,19 @@ HERO SECTION
 .img-wrapper {
     position: relative;
     transition: .5s ease;
-    border-radius: 10px;
     overflow-y: hidden;
 }
 
 .img-wrapper:hover {
     box-shadow: 0px 4px 4px rgba(51, 59, 72, 0.25);
+    border-radius: 10px;
 }
 
 .img-wrapper img {
     width: 100%;
     height: 321px;
     object-fit: cover;
+    /*    object-position: top;*/
     filter: grayscale(100%);
     transition: .2s ease;
 }
