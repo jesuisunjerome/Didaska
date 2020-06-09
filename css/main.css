@@ -339,7 +339,7 @@ HERO SECTION
 }
 
 #colaboradores-wrapper {
-    background: var(--secondary-color);
+    background: var(--brown-color-opacity);
     position: relative;
 }
 
@@ -404,7 +404,7 @@ HERO SECTION
 }
 
 #funcion-wrapper {
-    background: var(--brown-color-opacity);
+    background: var(--secondary-color);
     position: relative;
 }
 
@@ -518,10 +518,6 @@ HERO SECTION
         background: red;
         height: 90%;
         border: 1px solid #dee2e6 !important;
-    }
-
-    #colaboradores-wrapper .col-md-6:first-child {
-        border-right: 1px solid var(--primary-color);
     }
 }
 
