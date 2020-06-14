@@ -159,6 +159,13 @@ GENERAL
     height: 15px;
 }
 
+.object-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 
 /**************************************
 HEADER
@@ -343,7 +350,7 @@ HERO SECTION
     border-bottom: 1px solid var(--brown-color-opacity);
 }
 
-#colaboradores-wrapper {
+#tutores-wrapper {
     background: var(--brown-color-opacity);
     position: relative;
 }
@@ -486,8 +493,16 @@ HERO SECTION
     margin-top: -220px;
 }
 
-#colaborador-login {
+#tutor-login {
     background: rgba(152, 134, 132, 0.8);
+}
+
+#quotes-wrapper p {
+    color: rgba(229, 229, 229, 0.8);
+}
+
+#quotes-wrapper .carousel-item img {
+    height: 450px;
 }
 
 
